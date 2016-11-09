@@ -1,0 +1,26 @@
+Compilation
+===
+
+Load this into Eclipse as an existing Java Project.
+
+If you get build errors:
+
+  Project -> Properties -> Java Build Path -> Libraries (tab)
+  Make sure all jar files in lib/ directory have been added.
+
+To run a program with a main() method:
+
+  Right click on class in Package Explorer -> Run as -> Java Application
+
+
+Main Contents
+===  
+
+search: examples of Lucene tools to build indices and do various searches,
+        main classes of interest:
+        
+  FileIndexBuilder: builds a fielded Lucene index from all files in a directory 
+                    with a given file extension (DocAdder builds the fields)
+                    
+  SimpleSearchRanker: exhibits Lucene query parser and query processing
+                    functionality (see main() for more details)
